@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Felipe - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-toggle">
+            <span class="dark-mode-icon">🌙</span>
+            <span class="dark-mode-icon" style="display:none;">☀️</span>
+        </button>
+    </header>
+
+    <section class="hero" id="about">
+        <div class="hero-text">
+            <h1>Olá, eu sou Victor.</h1>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela UNIT e apaixonado por tecnologia e inovação.
+                Estou constantemente aprendendo e buscando novos desafios na área de desenvolvimento web.</p>
+            <a href="assets/MODELO CURRICULO 2025 - NOVO.pdf" download class="btn">BAIXAR CURRÍCULO</a>
+        </div>
+        <img src="assets/1679006101326.jpg" alt="Foto de Victor">
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>PORTFÓLIO</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <a href="Portfolio/1- PROJETO JOGO NÚMERO OCULTO/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/numerooculto.png" alt="Jogo Número Oculto">
+                        <h3>Jogo Número Oculto</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Projeto que faz um sorteio de um número e o usuário tem que descobrir este número.</p>
+                    </a>
+                    <a href="Portfolio/2 - Calculadora/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/calculadora.png" alt="Calculadora">
+                        <h3>Calculadora</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Calculadora funcional com layout responsivo.</p>
+                    </a>
+                    <a href="Portfolio/3 - Lista de Tarefas/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/listatarefas.png" alt="Lista de Tarefas">
+                        <h3>Lista de Tarefas</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Programa de lista de tarefas simples.</p>
+                    </a>
+                    <a href="Portfolio/4 - Lista Tarefas (KANBAN)/" target="_blank" class="portfolio-item">
+                        <img src="assets/listatarefaskanban.png" alt="Lista de Tarefas localStorage">
+                        <h3>Lista de Tarefas localStorage</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Lista de tarefas com uso de localStorage.</p>
+                    </a>
+                    <a href="Portfolio/5 - SELECIONE UM CARRO/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/corrida.png" alt="Selecione um Carro">
+                        <h3>Selecione um Carro</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Site feito para interação do usuario com 2 carros onde pode acelerar e desacelerar.</p>
+                    </a>
+                    <a href="Portfolio/6 - Jogo da memória/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/jogodamemoria.png" alt="Jogo da Memória">
+                        <h3>Jogo da Memória</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Jogo da memória simples.</p>
+                    </a>
+                    <a href="Portfolio/7 - Conta Digital/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/bancodigital.png" alt="Conta Digital">
+                        <h3>Conta Digital</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Site com intuito de simular uma conta digital de um banco.</p>
+                    </a>
+                    <a href="Portfolio/8 - Lâmpada/index.html" target="_blank" class="portfolio-item">
+                        <img src="assets/lampada.png" alt="Lâmpada">
+                        <h3>Lâmpada</h3>
+                        <p>HTML, CSS, JS</p>
+                        <p>Projeto com eventos de clique utilizando uma lâmpada.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev" onclick="moveCarousel(-1)">&#8249; Anterior</button>
+                <button class="next" onclick="moveCarousel(1)">Próximo &#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>SKILLS</h2>
+        <div class="skill">
+            <div class="label">HTML</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 0%;">90%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="label">CSS</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 0%;">90%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="label">JAVASCRIPT</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 0%;">50%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="label">PYTHON</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 0%;">20%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="label">REACT</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 0%;">20%</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>CONTATO</h2>
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8948527524153!2d-37.07951712408035!3d-10.971308689189572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab17376de3a13%3A0xdc179b0e5e69f916!2sBem%20Viver%20Residencial%20Clube!5e0!3m2!1spt-BR!2sbr!4v1748649735482!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-container">
+                <form id="contactForm">
+                    <input type="text" name="nome" placeholder="Nome" required />
+                    <input type="email" name="email" placeholder="E-mail" required />
+                    <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <span>Facebook</span>
+            </a>
+            <a href="#" target="_blank">
+                <span>Instagram</span>
+            </a>
+            <a href="#" target="_blank">
+                <span>Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/in/victorfsmelo/" target="_blank">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+        <p>Victor Felipe ©2025 All rights reserved</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

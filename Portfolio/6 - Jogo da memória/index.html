@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jogo da Memória</h1>
+        <p>Encontre todos os pares de cartas correspondentes!</p>
+
+        <div class="stats">
+            <p>Tentativas nesta rodada: <span id="attempts">0</span></p>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <button id="restartButton">Reiniciar Jogo</button>
+
+        <div class="history">
+            <h3>Histórico de Tentativas</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <div class="congrats" id="congratsMessage">
+        <h2>PARABÉNS!</h2>
+        <p>Você completou o jogo em <span id="finalAttempts">0</span> tentativas!</p>
+        <button id="playAgainButton">Jogar Novamente</button>
+    </div>
+    <footer class="main-footer">
+        © 2025 Jogo da Memória - Desenvolvido por: Victor Felipe
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

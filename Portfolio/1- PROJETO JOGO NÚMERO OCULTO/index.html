@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogo Número Oculto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="modeSelector">
+      <h2>Escolha o modo de jogo</h2>
+      <button id="soloModeBtn">Jogar Sozinho</button>
+      <button id="duoModeBtn">Jogar em Dupla</button>
+    </div>
+
+    <div id="secretContainer" class="hidden">
+      <h2>JOGADOR 1</h2>
+      <p>Digite um número para ocultar:</p>
+      <input id="secretInput" type="number" min="0" />
+      <button id="setSecretBtn">Ocultar</button>
+    </div>
+
+    <div id="guessArea" class="hidden">
+      <h2 id="guessTitle">JOGADOR 2</h2>
+      <p>Tente adivinhar o número (5 tentativas):</p>
+      <input id="guessInput" type="number" min="0" />
+      <button id="guessBtn">Chutar</button>
+      <p id="attemptsInfo"></p>
+    </div>
+
+    <p id="message"></p>
+    <button id="resetBtn" style="display:none;">Reiniciar</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSE - Conta Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="assets/img_logo.png" alt="Logo">
+        <div class="user-info">
+            <div>Olá, Fulano</div>
+            <img src="assets/icon_user_.png" alt="Logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section-left">
+            <div class="account-card">
+                <h2>Conta</h2>
+                <div class="balance">R$ <span id="currentBalance">0,00</span></div>
+            </div>
+
+            <div class="center-image">
+                <img src="assets/img_seguros.png" alt="Imagem ilustrativa">
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn" id="pixAreaBtn">
+                    <img src="./assets/icon_pix_.png" style="display: block; margin: 0 auto 8px auto;">
+                    Área PIX
+                </button>
+                <button class="action-btn" id="payBtn">
+                    <img src="./assets/icon _dollar_.png" style="display: block; margin: 0 auto 8px auto;">
+                    Pagar
+                </button>
+                <button class="action-btn" id="investBtn">
+                    <img src="./assets/icon _graph_.png" style="display: block; margin: 0 auto 8px auto;">
+                    Investir
+                </button>
+            </div>
+        </section>
+
+        <section class="section-right">
+            <div class="in-out-container">
+                <div class="in-card">
+                    <h3>Entradas</h3>
+                    <div class="in-out-value in-value">R$ <span id="totalIn">0,00</span></div>
+                </div>
+                <div class="out-card">
+                    <h3>Saídas</h3>
+                    <div class="in-out-value out-value">R$ <span id="totalOut">0,00</span></div>
+                </div>
+            </div>
+            <div class="rightContent" id="rightContent">
+                <div class="transactions">
+                    <h2>Últimas transações</h2>
+                    <ul class="transaction-list" id="transactionList">
+                        <div class="no-transactions" id="noTransactionsMessage">Não constam transações</div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Título</h3>
+            <p id="modalMessage">Mensagem</p>
+            <button class="modal-btn" id="modalBtn">OK</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        © 2025 BankSE - Desenvolvido por: Victor Felipe
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
