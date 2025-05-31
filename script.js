@@ -82,6 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
 
+  document
+    .querySelector(".prev")
+    .addEventListener("click", () => moveCarousel(-1));
+  document
+    .querySelector(".next")
+    .addEventListener("click", () => moveCarousel(1));
+
   window.addEventListener("resize", () => {
     moveCarousel(0);
   });
