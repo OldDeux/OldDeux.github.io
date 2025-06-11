@@ -13,7 +13,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
   background: white;
@@ -382,6 +382,10 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+  .dark-mode .nav-links {
+    background-color: #2d2d2d;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -430,7 +434,6 @@ footer {
 }
 
 .dark-mode {
-  
   color: #f0f0f0;
 }
 
@@ -441,11 +444,6 @@ footer {
 
 .dark-mode .burger div {
   background-color: #f0f0f0;
-}
-
-.dark-mode .nav-links {
-  background-color: #3a3a3a;
-  gap: 10px;
 }
 
 .dark-mode .nav-links a {
