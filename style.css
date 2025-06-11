@@ -386,6 +386,7 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    height: auto;
   }
 
   .hero-text {
@@ -438,8 +439,21 @@ footer {
   border-bottom: 1px solid #444;
 }
 
+.dark-mode .burger div {
+  background-color: #f0f0f0;
+}
+
+.dark-mode .nav-links {
+  background-color: #2d2d2d;
+  gap: 10px;
+}
+
 .dark-mode .nav-links a {
   color: #f0f0f0;
+}
+
+.dark-mode .nav-links a:hover {
+  color: #f75e5e;
 }
 
 .dark-mode .hero {
@@ -483,7 +497,7 @@ footer {
 }
 
 .dark-mode .progress-bar {
-  color: #ffffff;
+  color: black;
 }
 
 .dark-mode .contact {
@@ -525,7 +539,6 @@ footer {
 
 .dark-mode-toggle {
   position: relative;
-  background-color: #2d2d2d;
   border: none;
   border-radius: 50px;
   width: 50px;
@@ -546,6 +559,11 @@ footer {
 
 .dark-mode .dark-mode-toggle {
   background-color: #f0f0f0;
+}
+
+.dark-mode-toggle img {
+  width: 24px;
+  height: 24px;
 }
 
 .dark-mode-toggle:hover {
